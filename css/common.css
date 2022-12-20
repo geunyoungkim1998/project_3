@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); 
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*font*/
+.fredoka1{
+    font-family: 'Fredoka One', cursive;
+    font-size:20px;
+    color:#444;
+}
+.fredoka2{
+    font-family: 'Fredoka One', cursive;
+    font-size:50px;
+    color:#444;
+}
+.fredoka3{
+    font-family: 'Fredoka One', cursive;
+    font-size:30px;
+    color:#444;
+}
+.jua1{
+    font-family: 'BMJUA';
+    font-size: 20px;
+    color:#444;
+}
+.jua2{
+    font-family: 'BMJUA';
+    font-size: 50px;
+    color:#444;
+}
+.noto1{
+    font-family: 'Noto Sans KR';
+    color:#444;
+    font-size:20px;
+}
+.noto2{
+    font-family: 'Noto Sans KR';
+    color:rgb(189, 189, 189);
+    font-size:16px;
+}
+.noto3{
+    font-family: 'Noto Sans KR';
+    color:#444;
+    font-size:16px;
+}
+
+.hoverR:hover{
+    color:red;
+}
+.hoverY:hover{
+    color:gold;
+}
+.hoverG:hover{
+    color:yellowgreen;
+}
+.hoverB:hover{
+    color:lightskyblue;
+}
+.hoverP:hover{
+    color:violet;
+}
+
+/*header*/
+header{
+    width:100%;
+    height:90px;
+    background-color: rgba(255,255,255,0.8);
+    position:fixed;
+}
+.big{
+    width:1100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.big img{
+    width:60px;
+    height:60px;
+    cursor: pointer;
+}
+.big>ul>li{
+    display: inline-block;
+    padding:30px;
+    cursor: pointer;
+}
+.searchicon{
+    width:25px;
+    height:25px;
+}
+.headerbtn{
+    background-color: #444;
+    color:white;
+    padding:3px;
+}
