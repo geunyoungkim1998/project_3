@@ -31,8 +31,9 @@ body{
     background-repeat: no-repeat;
     background-size: 1100px auto;
     background-position:80% 219px;
+    z-index: 10;
 }
-.slider1>div:first-child{
+.slider1>div:nth-child(1){
     width:1100px;
     margin-top:180px;
 }
@@ -40,19 +41,30 @@ body{
     margin-bottom: 20px;
 }
 .slider1>div:last-child{
-    width:100%;
+    width:1700px;
 }
 #lego1{
     width:400px;
     height: auto;
     animation:motion 1s linear 0s infinite alternate;
-    margin-left: 50px;
-    margin-top:30px;
     rotate: 20deg;
+    float: left;
 }
 @keyframes motion{
     0%{margin-top:0px;}
     100%{margin-top:20px;}
+}
+#lego2{
+    width:350px;
+    height: auto;
+    animation:motion2 1s linear 0s infinite alternate;
+    rotate: -50deg;
+    float: right;
+    top:-50px;
+}
+@keyframes motion2{
+    0%{margin-top:300px;}
+    100%{margin-top:280px;}
 }
 
 #sec1{
@@ -86,6 +98,7 @@ body{
     height:400px;
     margin-top:20px;
     text-align: center;
+    opacity: 0;
 }
 .sec1div3 img{
     width:300px;
@@ -155,6 +168,7 @@ img[name=wrench]{
     height:400px;
     margin-top:-10px;
     text-align: center;
+    opacity: 0;
 }
 .sec2div2 img{
     width:300px;
@@ -323,16 +337,16 @@ img[name=wrench1]{
     display: flex;
     flex-wrap: wrap;
 }
-.sec6div2>div>p:first-child{
+.sec6div2>div p:first-child{
     margin-top: 20px;
 }
-.sec6div2>div>svg{
+.sec6div2>div svg{
     align-self: flex-end;
     margin-bottom: 100px;
     opacity: 0.5;
     transition: .3s ease; 
 }
-.sec6div2>div>svg:hover{
+.sec6div2>div svg:hover{
     opacity: 1;
     transform: scale(1.2);
     cursor: pointer;
@@ -349,6 +363,7 @@ img[name=wrench1]{
     width:100%;
     height:700px;
     background-color: lightgray;
+    position:relative;
 }
 #sec7>div{
     width:1100px;
@@ -362,4 +377,3 @@ img[name=wrench1]{
 .sec7div2{
     height:550px;
 }
-
