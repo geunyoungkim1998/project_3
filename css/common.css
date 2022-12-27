@@ -24,6 +24,16 @@
     font-size:30px;
     color:#444;
 }
+.fredoka4{
+    font-family: 'Fredoka One', cursive;
+    font-size:30px;
+    color:white;
+}
+.fredoka5{
+    font-family: 'Fredoka One', cursive;
+    font-size:50px;
+    color:white;
+}
 .jua1{
     font-family: 'BMJUA';
     font-size: 20px;
@@ -64,6 +74,11 @@
     font-family: 'Noto Sans KR';
     color:white;
     font-size:12px;
+}
+.noto7{
+    font-family: 'Noto Sans KR';
+    color:white;
+    font-size:16px;
 }
 
 .hoverR:hover{
@@ -168,7 +183,9 @@ header{
     padding:5px;
     border:none;
 }
-
+#lan>option{
+    border:none;
+}
 
 /*footer*/
 footer{

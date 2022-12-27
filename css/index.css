@@ -220,7 +220,7 @@ img[name=wrench1]{
 #sec3{
     width:100%;
     height:900px;
-    background-color: rgb(106, 144, 248);
+    background-color: #444;
 }
 .sec3div1{
     width:1100px;
@@ -244,21 +244,109 @@ img[name=wrench1]{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    overflow: hidden;
+    position:relative;
 }
 .sec3div2>div:nth-of-type(2n){
     background-color: rgb(250, 250, 250);
 }
-.sec3div2>div>p{
+.sec3div2>div p{
     padding:40px 20px;
 }
-.sec3div2>div>p:nth-of-type(1){
+.wrap1, .wrap2, .wrap3, .wrap4, .wrap5{
+    width:500%;
+    height:500%;
+    position:absolute;
     text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -600px;
+    margin-left: -440px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .6s ease;
+}
+.sec3div2>div:nth-child(1):hover .wrap1{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.sec3div2>div:nth-child(2):hover .wrap2{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.sec3div2>div:nth-child(3):hover .wrap3{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.sec3div2>div:nth-child(4):hover .wrap4{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.sec3div2>div:nth-child(5):hover .wrap5{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.wrap1 p,.wrap2 p{
+    width:18%;
+    height:18%;
+    padding:20px;
+    margin-top:750px;
+}
+.wrap3 p, .wrap4 p, .wrap5 p{
+    width:18%;
+    height:18%;
+    padding:20px;
+    margin-top:680px;
+}
+.wrap1{
+    background-color: rgb(247, 95, 95);
+}
+.wrap2{
+    background-color: rgb(247, 197, 60);
+}
+.wrap3{
+    background-color: rgb(126, 221, 126);
+}
+.wrap4{
+    background-color: rgb(94, 107, 230);
+}
+.wrap5{
+    background-color: rgb(199, 120, 223);
+}
+img[name="human"]{
+    width:400px;
+    height: auto;
+}
+.sec3title{
+    position:relative;
+}
+.sec3title>p{
+    text-align: center;
+    margin-top:50px;
+}
+.sec3title>img{
+    position:absolute;
+    top:400px;
+    right:-90px;
+}
+img[name="human1"]{
+    width:500px;
+    height:auto;
+    position: absolute;
+    right: -160px;
 }
 
 #sec4{
     width:100%;
     height:700px;
-    background-color: lightgrey;
+    background-color: rgb(236, 89, 89);
 }
 .sec4div1{
     width:1100px;
@@ -293,7 +381,7 @@ img[name=wrench1]{
 #sec5{
     width:100%;
     height:800px;
-    background-color: purple;
+    background-color: rgb(116, 114, 231);
 }
 #sec5>div{
     width:1100px;
@@ -315,7 +403,7 @@ img[name=wrench1]{
 #sec6{
     width:100%;
     height:750px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(247, 247, 247);
 }
 .sec6div1{
     width:1100px;
@@ -327,7 +415,7 @@ img[name=wrench1]{
 }
 .sec6div2{
     width:1100px;
-    height:650px;
+    height:600px;
     display: flex;
 }
 .sec6div2>div{
@@ -339,6 +427,10 @@ img[name=wrench1]{
 }
 .sec6div2>div p:first-child{
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec6div2>div p:nth-child(2){
+    margin-bottom: 20px;
 }
 .sec6div2>div svg{
     align-self: flex-end;
@@ -362,7 +454,6 @@ img[name=wrench1]{
 #sec7{
     width:100%;
     height:700px;
-    background-color: lightgray;
     position:relative;
 }
 #sec7>div{
@@ -376,4 +467,21 @@ img[name=wrench1]{
 }
 .sec7div2{
     height:550px;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position:absolute;
+    margin-top:-530px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;  
+}
+.swiper-slide img {
+    display: block;
+    width: 40%;
 }
