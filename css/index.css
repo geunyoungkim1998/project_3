@@ -22,15 +22,10 @@ body{
 #slider{
     width:100%;
     height:940px;
-    /* background-color: bisque; */
 }
 .slider1{
-    width:100%;
+    width:1100px;
     height:940px;
-    background-image: url(../img/lego4.png);
-    background-repeat: no-repeat;
-    background-size: 1100px auto;
-    background-position:80% 219px;
     z-index: 10;
 }
 .slider1>div:nth-child(1){
@@ -43,28 +38,92 @@ body{
 .slider1>div:last-child{
     width:1700px;
 }
+.slider1>div>img{
+    float: left;
+}
+#one{
+    float: left;
+    z-index: -1;
+    width: 1200px;
+    position: absolute;
+    top:-300px;
+    right:-200px;
+    animation:one 10s infinite alternate;
+}
+@keyframes one {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      transform: rotate(20deg);
+    }
+}
+#one2{
+    float: left;
+    z-index: -1;
+    width: 600px;
+    position: absolute;
+    top:600px;
+    left:-300px;
+    animation:one2 10s infinite alternate;
+}
+@keyframes one2 {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      transform: rotate(20deg);
+    }
+  }
+#humans{
+    width:1100px;
+    height:auto;
+    z-index: 1;
+}
 #lego1{
     width:400px;
     height: auto;
     animation:motion 1s linear 0s infinite alternate;
     rotate: 20deg;
     float: left;
+    z-index: 2;
 }
 @keyframes motion{
-    0%{margin-top:0px;}
-    100%{margin-top:20px;}
+    0%{
+        margin-top:-350px;
+        margin-left: -250px;
+    }
+    100%{
+        margin-top:-330px;
+        margin-left: -250px;
+    }
 }
 #lego2{
-    width:350px;
+    width:150px;
     height: auto;
     animation:motion2 1s linear 0s infinite alternate;
     rotate: -50deg;
     float: right;
     top:-50px;
+    z-index: 3;
 }
 @keyframes motion2{
-    0%{margin-top:300px;}
-    100%{margin-top:280px;}
+    0%{
+        margin-top:-200px;
+        margin-left: -250px;
+    }
+    100%{
+        margin-top:-220px;
+        margin-left: -250px;
+    }
 }
 
 #sec1{
@@ -231,6 +290,7 @@ img[name=wrench1]{
 .sec3div1 p{
     color:white;
 }
+
 .sec3div2{
     width:1100px;
     height:700px;
@@ -345,7 +405,7 @@ img[name="human1"]{
 
 #sec4{
     width:100%;
-    height:700px;
+    height:720px;
     background-color: rgb(236, 89, 89);
 }
 .sec4div1{
@@ -371,11 +431,49 @@ img[name="human1"]{
 .sec4div2>div:nth-of-type(2n){
     background-color: rgb(241, 241, 241);
 }
-.sec4div2>div>p{
-    padding:40px 20px;
+.sec4div2>div{
+    position: relative;
 }
-.sec4div2>div>p:nth-of-type(1){
+.sec4text{
+    opacity: 0;
+    position: absolute;
+    /* top:20px; */
+    padding:20px;
+    background-color: black;
+    width:235px;
+    height:291px;
+    transition: all 0.3s ease;
+}
+.sec4text>p{
+    color:white;
     text-align: center;
+}
+.sec4img{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec4img>p{
+    padding-top:50px;
+    padding-bottom: 225px;
+}
+.sec4img>img{
+    width:300px;
+    transition: all 0.3s ease;
+    padding:20px 0px;
+}
+.sec4div2>div:nth-of-type(1):hover .sec4text1, 
+.sec4div2>div:nth-of-type(2):hover .sec4text2,
+.sec4div2>div:nth-of-type(3):hover .sec4text3,
+.sec4div2>div:nth-of-type(4):hover .sec4text4{
+    opacity: 1;
+}
+.sec4div2>div:nth-of-type(1):hover .sec4img:nth-of-type(1)>img, 
+.sec4div2>div:nth-of-type(2):hover .sec4img2>img,
+.sec4div2>div:nth-of-type(3):hover .sec4img3>img,
+.sec4div2>div:nth-of-type(4):hover .sec4img4>img{
+    scale:1.3;
 }
 
 #sec5{
@@ -392,12 +490,74 @@ img[name="human1"]{
 .sec5div1{
     width:55%;
     height:800px;
-    background-color: aliceblue;
+    background-color: rgb(116, 114, 231);
+    background-image: url(../img/lego11.png);
+    background-repeat: no-repeat;
+    background-size: 800px auto;
+    background-position: 30% 170%;
+}
+.sec5div1>div{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.div5input{
+    border:2px dashed white;
+    width:90%;
+    margin-top:20px;
+    height: 350px;
+}
+.sec5div1>div:first-child{
+    text-align: center;
+}
+.div5input>p>input{
+    border:2px solid white;
+    border-radius: 30px;
+    padding:10px;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.0);
+}
+.div5input>p:nth-of-type(2) input{
+    width:410px;
+}
+.div5input>p:nth-of-type(1) input{
+    width:430px;
+}
+.div5input>p:nth-of-type(3) input{
+    width:425px;
+}
+.div5input>p:nth-of-type(4) input{
+    width:450px;
+}
+.div5input>p>input::placeholder{
+    color:rgba(255,255,255,0.4);
+}
+.div5input>button{
+    width:90px;
+    height:40px;
+    border:2px solid white;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    /* margin-left: 435px; */
+}
+.div5input>button:hover{
+    background-color: white ;
+    color: rgb(116, 114, 231);;
 }
 .sec5div2{
     width:45%;
     height:800px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(118, 199, 118);
+}
+.sec5div2>p{
+    padding: 20px;
+    text-align: center;
+}
+.sec5div2>div>p{
+    text-align: center;
+    padding: 9px 0px;
 }
 
 #sec6{
