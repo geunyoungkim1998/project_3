@@ -3,6 +3,7 @@
 *{
     margin:0 auto;
     padding:0;
+    cursor: url(../img/cursor2.cur),auto;
 }
 ul, li, ol{
     list-style: none;
