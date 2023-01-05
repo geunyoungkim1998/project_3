@@ -27,13 +27,47 @@
         <div class="big">
             <div><img src="img/lego.png" alt="logo"></div>
             <ul>
-                <li class="fredoka1 hoverR">LEGO</li>
-                <li class="fredoka1 hoverY">PRODUCTS</li>
-                <li class="fredoka1 hoverG">LEGO GUID</li>
-                <li class="fredoka1 hoverB">SURPORT</li>
-                <li class="fredoka1 hoverP">COMMUNITY</li>
+                <li class="fredoka1 hoverR">LEGO
+                    <ul class="submenu noto3">
+                        <li>About the LEGO brand</li>
+                        <li>LEGO news</li>
+                        <li>Corporate value</li>
+                        <li>History</li> 
+                    </ul>
+                </li>
+                <li class="fredoka1 hoverY">PRODUCTS
+                    <ul class="submenu noto3">
+                        <li>All ages</li>
+                        <li>For children</li>
+                        <li>For teenager</li>
+                        <li>For adult</li>
+                    </ul>
+                </li>
+                <li class="fredoka1 hoverG">LEGO GUID
+                    <ul class="submenu noto3">
+                        <li>Manual</li>
+                        <li>Product manual</li>
+                        <li>Shop</li>
+                        <li>How to made</li>
+                    </ul>
+                </li>
+                <li class="fredoka1 hoverB">SURPORT
+                    <ul class="submenu noto3">
+                        <li>F&Q</li>
+                        <li>Contact</li>
+                        <li>Ai chat</li>
+                        <li>Video</li>
+                    </ul>
+                </li>
+                <li class="fredoka1 hoverP">COMMUNITY
+                    <ul class="submenu noto3">
+                        <li>Twitter</li>
+                        <li>Instargram</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                    </ul>
+                </li>
             </ul>
-            <!-- <button class="fredoka1 headerbtn">MALL</button> -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="searchicon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
             <select name="lan" id="lan">
                 <option value="KOR">KOR</option>
@@ -41,6 +75,10 @@
             </select>
         </div>
     </header>
+
+    <div id="arrow">
+        <a href="index.html"><img src="img/arrow.png" alt="arrow"></a>
+    </div>
 
     <div id="slider">
         <div class="slider1">
@@ -55,85 +93,133 @@
             <img src="img/lego4.png" alt="lego" id="humans">
             <img src="img/lego1.png" alt="lego" name="lego1" id="lego1">
             <img src="img/lego8.png" alt="lego" id="lego2">
+            <img src="img/lego6.png" alt="lego" id="lego3">
+            <img src="img/lego15.png" alt="lego" id="lego4">
         </div>
-        <div class="slider2"></div>
+        <div class="slider2">
+            <div>
+                <p class="fredoka2">Only the best is<br> good enough</p>
+                <br>
+                <p class="noto1">As children shape their own worlds with LEGO bricks,<br> 
+                    we play our part in having a positive impact on the world<br> 
+                    they live in today and will inherit in the future.</p>
+            </div>
+            <img src="img/one3.png" alt="one" id="one3">
+            <img src="img/one3.png" alt="one" id="one4">
+            <img src="img/lego12.png" alt="lego" id="humans2">
+            <img src="img/rocket.png" alt="rocket" id="rocket">
+        </div>
     </div>
 
     <div id="sec1">
-        <div class="sec1div1">
-            <p class="fredoka2">PRODUCT</p>
-            <button class="jua1 blockbtnR">shopping mall</button>
-        </div>
-        <div class="sec1div2">
-            <p class="fredoka2">ART</p>
-            <p class="noto2">Introducing LEGO products</p>
-            <button class="jua1 blockbtnG">&#62;</button>
-        </div>
-        <div class="sec1div3">
-            <div><figure><img src="img/p1.JPG" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Police office<br>259,000</p></div>
-            <div><figure><img src="img/p2.JPG" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Motorized lighthouse<br>399,000</p></div>
-            <div><figure><img src="img/p3.JPG" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Mini disney castle<br>55,000</p></div>
+        <div>
+            <img src="img/lego17.png" alt="fuman" id="policeman">
+            <div class="sec1div1">
+                <p class="fredoka2">PRODUCT</p>
+                <button class="jua1 blockbtnR">shopping mall</button>
+            </div>
+            <div class="sec1div2">
+                <p class="fredoka2">ART</p>
+                <p class="noto2">Introducing LEGO products</p>
+                <button class="jua1" id="btnGL">&#60;</button>
+                <button class="jua1" id="btnGR">&#62;</button>
+            </div>
+            <div class="sec1div3" id="shop1">
+                <div><figure><img src="img/p6.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Police office<br>259,000</p></div>
+                <div><figure><img src="img/p4.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Opera House<br>399,000</p></div>
+                <div><figure><img src="img/p7.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Big ben<br>255,000</p></div>
+            </div>
+            <div class="sec1div3" id="shop2">
+                <div><figure><img src="img/good1.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Castle<br>249,000</p></div>
+                <div><figure><img src="img/good2.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Ship seatle<br>299,000</p></div>
+                <div><figure><img src="img/good3.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench"></figcaption></figure><p class="jua1">Beautiful buliding<br>295,000</p></div>
+            </div>
         </div>
     </div>
 
     <div id="sec2">
-        <div class="sec2div1">
-            <p class="fredoka2">KIDS</p>
-            <p class="noto2">Introducing LEGO's children's (4+) products</p>
-            <button class="jua1 blockbtnW">&#62;</button>
-        </div>
-        <div class="sec2div2">
-            <div><figure><img src="img/c1.JPG" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"></figcaption></figure><p class="jua1">Mickey and Donald's Animal Farm<br>44,900</p></div>
-            <div><figure><img src="img/c2.JPG" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"> </figcaption></figure><p class="jua1">Picnic in the park<br>21,900</p></div>
-            <div><figure><img src="img/c3.JPG" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"></figcaption></figure><p class="jua1">Farm animals<br>74,900</p></div>
+        <div>
+            <img src="img/human5.png" alt="human" id="super">
+            <div class="sec2div1">
+                <p class="fredoka5">KIDS</p>
+                <p class="noto7">Introducing LEGO's children's (4+) products</p>
+                <button class="jua1" id="btnWL">&#60;</button>
+                <button class="jua1" id="btnWR">&#62;</button>
+            </div>
+            <div class="sec2div2" id="shop3">
+                <div><figure><img src="img/p8.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"></figcaption></figure><p class="jua4">Animal Farm<br>44,900</p></div>
+                <div><figure><img src="img/p9.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"> </figcaption></figure><p class="jua4">Natural Farm<br>21,900</p></div>
+                <div><figure><img src="img/p10.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"></figcaption></figure><p class="jua4">Pizza shop<br>74,900</p></div>
+            </div>
+            <div class="sec2div2" id="shop4">
+                <div><figure><img src="img/good4.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"></figcaption></figure><p class="jua4">Construction site<br>64,900</p></div>
+                <div><figure><img src="img/good7.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"> </figcaption></figure><p class="jua4">Natural Farm<br>31,900</p></div>
+                <div><figure><img src="img/good6.png" alt="lego"><figcaption class="noto4">Details <img src="img/wrenchW.png" alt="wr" name="wrench1"></figcaption></figure><p class="jua4">Flower Garden<br>44,900</p></div>
+            </div>
         </div>
     </div>
 
     <div id="sec3">
-        <div class="sec3div1">
-            <p class="fredoka2">The LEGO® Brand Values</p>
-            <p class="fredoka1">Only the best is good enough</p>
-        </div>
-        <div class="sec3div2">
-            <div>
-                <div class="sec3title">
-                    <p class="fredoka3">Imagination</p>
-                    <img src="img/human1.png" alt="human" name="human">
-                </div>
-                <div class="wrap1"><p class="noto7"><span class="fredoka4">Imagination</span><br><br> Free play is how children develop their imagination – the foundation for creativity. Curiosity asks WHY and imagines possible explanations. Playfulness asks WHAT IF and imagines how the ordinary becomes extraordinary, fantasy or fiction. Dreaming it is a first step towards doing it.</p></div>
+        <div>
+            <div class="sec3div1">
+                <p class="fredoka2">The LEGO® Brand Values</p>
+                <p class="fredoka1">Only the best is good enough</p>
             </div>
-            <div>
-                <div class="sec3title">
-                    <p class="fredoka3">Creativity</p>
-                    <img src="img/human3.png" alt="human" name="human1">
+            <div class="sec3div2">
+                <div>
+                    <div class="sec3title">
+                        <p class="fredoka3">Imagination</p>
+                        <img src="img/human1.png" alt="human" name="human">
+                    </div>
+                    <div class="wrap1"><p class="noto7"><span class="fredoka4">Imagination</span><br><br> Free play is how children develop their imagination – the foundation for creativity. Curiosity asks WHY and imagines possible explanations. Playfulness asks WHAT IF and imagines how the ordinary becomes extraordinary, fantasy or fiction. Dreaming it is a first step towards doing it.</p></div>
                 </div>
-                <div class="wrap2"><p class="noto7"><span class="fredoka4">Creativity</span><br><br> Creativity is the ability to come up with ideas that are new, surprising and valuable - and it’s an essential 21st century skill. Systematic creativity is a particular form of creativity that combines logic and reasoning with playfulness and imagination.</p></div>
-            </div>
-            <div>
-                <div class="sec3title"> 
-                    <p class="fredoka3">Fun</p>
-                    <img src="img/human6.png" alt="human" name="human">
+                <div>
+                    <div class="sec3title">
+                        <p class="fredoka3">Creativity</p>
+                        <img src="img/human3.png" alt="human" name="human1">
+                    </div>
+                    <div class="wrap2"><p class="noto7"><span class="fredoka4">Creativity</span><br><br> Creativity is the ability to come up with ideas that are new, surprising and valuable - and it’s an essential 21st century skill. Systematic creativity is a particular form of creativity that combines logic and reasoning with playfulness and imagination.</p></div>
                 </div>
-                <div class="wrap3"><p class="noto7"><span class="fredoka4">Fun</span><br><br> Fun is being active together, the thrill of an adventure, the joyful enthusiasm of children and the delight in surprising both yourself and others in what you can do or create. Fun is the happiness we experience when we are fully engaged in something that requires mastery, when our abilities are in balance with the challenge at hand and we are making progress towards a goal.</p></div>
-            </div>
-            <div>
-                <div class="sec3title">
-                    <p class="fredoka3">Quality</p>
-                    <img src="img/lego5.png" alt="human" name="human1">
+                <div>
+                    <div class="sec3title"> 
+                        <p class="fredoka3">Fun</p>
+                        <img src="img/human6.png" alt="human" name="human">
+                    </div>
+                    <div class="wrap3"><p class="noto7"><span class="fredoka4">Fun</span><br><br> Fun is being active together, the thrill of an adventure, the joyful enthusiasm of children and the delight in surprising both yourself and others in what you can do or create. Fun is the happiness we experience when we are fully engaged in something that requires mastery, when our abilities are in balance with the challenge at hand and we are making progress towards a goal.</p></div>
                 </div>
-                <div class="wrap4"><p class="noto7"><span class="fredoka4">Quality</span><br><br> For us quality means the challenge of continuous improvement to provide the best play material, the best for children and their development and the best to our community and partners. From a reputation for manufacturing excellence to becoming trusted by all – we believe in quality that speaks for itself and earns us the recommendation of all..</p></div>
-            </div>
-            <div>
-                <div class="sec3title">
-                    <p class="fredoka3">Learning</p>
-                    <img src="img/human4.png" alt="human" name="human">
+                <div>
+                    <div class="sec3title">
+                        <p class="fredoka3">Quality</p>
+                        <img src="img/lego5.png" alt="human" name="human1">
+                    </div>
+                    <div class="wrap4"><p class="noto7"><span class="fredoka4">Quality</span><br><br> For us quality means the challenge of continuous improvement to provide the best play material, the best for children and their development and the best to our community and partners. From a reputation for manufacturing excellence to becoming trusted by all – we believe in quality that speaks for itself and earns us the recommendation of all..</p></div>
                 </div>
-                <div class="wrap5"><p class="noto7"><span class="fredoka4">Learning</span><br><br> Learning is about being curious, experimenting and collaborating – expanding our thinking and doing, helping us develop new insights and new skills. We learn through play by putting things together, taking them apart and putting them together in different ways. Building, un-building, rebuilding, thereby creating new things and developing new ways of thinking about ourselves, and the world.</p></div>
+                <div>
+                    <div class="sec3title">
+                        <p class="fredoka3">Learning</p>
+                        <img src="img/human4.png" alt="human" name="human">
+                    </div>
+                    <div class="wrap5"><p class="noto7"><span class="fredoka4">Learning</span><br><br> Learning is about being curious, experimenting and collaborating – expanding our thinking and doing, helping us develop new insights and new skills. We learn through play by putting things together, taking them apart and putting them together in different ways. Building, un-building, rebuilding, thereby creating new things and developing new ways of thinking about ourselves, and the world.</p></div>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="sec4">
+        <div class="area">
+            <ul class="circle">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <div class="sec4div1">
             <p class="fredoka5">The LEGO® Promises</p>
         </div>
@@ -190,10 +276,10 @@
                 </div>
                 <div class="div5input noto7">
                     <div>Enter shipping information</div><br>
-                    <p>Name:&nbsp;&nbsp;<input type="text" class="noto7" placeholder="Lego kim"></p>
-                    <p>Zip code:&nbsp;&nbsp;<input type="text" class="noto7" placeholder="12345"></p>
-                    <p>Adress:&nbsp;&nbsp;<input type="text" class="noto7" placeholder="Cheokcheok-si Bakhak-dong Lego Apartment"></p>
-                    <p>Tel:&nbsp;&nbsp;<input type="text" class="noto7" placeholder="010-2345-6789"></p>
+                    <p><span>Name:</span>&nbsp;&nbsp;<input type="text" class="noto7" placeholder="Lego kim"></p>
+                    <p><span>Zip code:</span>&nbsp;&nbsp;<input type="text" class="noto7" placeholder="12345 *text only" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></p>
+                    <p><span>Adress:</span> &nbsp;&nbsp;<input type="text" class="noto7" placeholder="Cheokcheok-si Baksa-dong Lego Apartment"></p>
+                    <p><span>Tel:</span>&nbsp;&nbsp;<input type="text" class="noto7" placeholder="01023456789 *text only" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></p>
                     <button>SUBMIT</button>
                 </div>
                 <div>
@@ -204,17 +290,7 @@
                         - You are responsible for not reading this description.
                     </p>
                 </div>
-            </div>
-            <div class="sec5div2">
-                <p class="fredoka5">LEGO's VIDEO</p>
-                <div>
-                    <p class="noto5">We invite you all to build a playful holiday! </p>
-                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9LeofxQR_Ps" title="We invite you all to build a playful holiday! 🎁" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <p class="noto5">LEGO Star Wars: Brick Film – How to Sound Design</p>
-                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/bSQs-b03nNk" title="LEGO Star Wars: Brick Film – How to Sound Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <img src="img/gift.PNG" alt="gift" id="gift">
             </div>
         </div>
     </div>
@@ -227,24 +303,66 @@
         </div>
         <div class="sec6div2">
             <div>
-                <p class="fredoka1">[PRODUCTS]Building All The Right Notes With The New LEGO Jazz Club</p>
-                <p class="noto3">14th December 2022: The LEGO Group unveils the hottest new music venue in town – the LEGO Jazz Club. A vibrant addition to the LEGO Modular Building collection, the LEGO Jazz Club banishes the blues, bringing the theme of music to the collection for the first time.</p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="arrow6"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                <div class="newstitle">
+                    <p class="fredoka1">[RESPONSIBILITY]Build a Gift to Give a Gift with the LEGO Group to help two million children</p>
+                    <br>
+                    <p class="noto3">December 12,2022</p>
+                    <img src="img/news4.jpg" alt="news4">
+                </div>
+                <a href="https://www.lego.com/ko-kr/aboutus/news/2022/november/build-a-gift-to-give-a-gift-with-the-lego-group">
+                    <div class="newswrap">
+                        <p class="noto7">The Holiday season is one that many families cherish, but for others it can be a challenging time. With this year’s #BuildToGive initiative, the LEGO Group is encouraging families to use their creativity to build a gift from LEGO® bricks, which will be turned into a gift for another child somewhere else in the world. #BuildToGive will help pass on the joy of play to those most in need.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                            <path style="fill:rgb(255, 255, 255);" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                        </svg>
+                    </div>
+                </a>
             </div>
             <div>
-                <p class="fredoka1">[RESPONSIBILITY]The LEGO Foundation Announces Recipients of 900 Million Danish Kroner (US$117 Million) Global Challenge</p>
-                <p class="noto3">Selected from over 600 applications, the LEGO Foundation’s Build a World of Play Challenge will fund five ground-breaking projects that will ensure children globally reach their full potential through play.</p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="arrow6"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                <div class="newstitle">
+                    <p class="fredoka1">[RESPONSIBILITY]The LEGO Foundation Announces Recipients of 900 Million Danish Kroner (US$117 Million) Global Challenge</p>
+                    <p class="noto3">December 6,2022</p>
+                    <img src="img/news2.jpg" alt="news2">
+                </div>
+                <a href="https://www.lego.com/ko-kr/aboutus/news/2022/december/the-lego-foundation-announces-recipients-of-900-million-danish-kroner-us-117-million-global-challenge">
+                    <div class="newswrap">
+                        <p class="noto7">Selected from over 600 applications, the LEGO Foundation’s Build a World of Play Challenge will fund five ground-breaking projects that will ensure children globally reach their full potential through play.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                            <path style="fill:rgb(255, 255, 255);" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                        </svg>
+                    </div>
+                </a>
             </div>
             <div>
-                <p class="fredoka1">[PRODUCTS]Fall In Love With The LEGO® Eiffel Tower - The Tallest Set Yet!</p>
-                <p class="noto3">15th November 2022: The LEGO Group has today revealed its tallest build yet – the breath-taking new LEGO® Eiffel tower set. One of the world’s most recognisable landmarks, the new LEGO set will immediately transport you to the heart of Paris.</p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="arrow6"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                <div class="newstitle">
+                    <p class="fredoka1">[PRODUCTS]Fall In Love With The LEGO® Eiffel Tower - The Tallest Set Yet!</p>
+                    <br>
+                    <p class="noto3">November 15,2022</p>
+                    <img src="img/news3.jpg" alt="news3">
+                </div>
+                <a href="https://www.lego.com/ko-kr/aboutus/news/2022/november/lego-eiffel-tower-set">
+                    <div class="newswrap">
+                        <p class="noto7">The LEGO Group has today revealed its tallest build yet – the breath-taking new LEGO® Eiffel tower set. One of the world’s most recognisable landmarks, the new LEGO set will immediately transport you to the heart of Paris.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                            <path style="fill:rgb(255, 255, 255);" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                        </svg>
+                    </div>
+                </a>
             </div>
             <div>
-                <p class="fredoka1">[SITES]The LEGO Group breaks ground on another state-of-the-art Billund campus focusing on an inspiring and playful working environment</p>
-                <p class="noto3">Billund, November 11, 2022: Today the LEGO Group celebrated breaking ground on yet another state-of-the-art campus in Billund, Denmark, where 1,900 engineering, quality and production employees from across seven locations will come together under one roof.</p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="arrow6"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                <div class="newstitle">
+                    <p class="fredoka1">[PRODUCTS]Building All The Right Notes With The New LEGO Jazz Club</p>
+                    <p class="noto3">November 4, 2022</p>
+                    <img src="img/news1.jpg" alt="news1">
+                </div>
+                <a href="https://www.lego.com/ko-kr/aboutus/news/2022/december/building-all-the-right-notes-with-the-new-lego-jazz-club">
+                    <div class="newswrap"> 
+                        <p class="noto7">The LEGO Group unveils the hottest new music venue in town – the LEGO Jazz Club. A vibrant addition to the LEGO Modular Building collection, the LEGO Jazz Club banishes the blues, bringing the theme of music to the collection for the first time.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                            <path style="fill:rgb(255, 255, 255);" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
