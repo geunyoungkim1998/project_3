@@ -112,29 +112,10 @@ function inputNumberOnly(el){
 
 // 뉴스호버
 $(function(){
-    $(".sec6div2>div:first").mouseenter(function(){
-        $(".newswrap:eq(0)").css("opacity","1");
+    $(".sec6div2>div",this).mouseenter(function(){
+        $(".newswrap",this).addClass("flip-horizontal-top");
     });
-    $(".sec6div2>div:first").mouseleave(function(){
-        $(".newswrap:eq(0)").css("opacity","0");
-    });
-    $(".sec6div2>div:eq(1)").mouseenter(function(){
-        $(".newswrap:eq(1)").css("opacity","1");
-    });
-    $(".sec6div2>div:eq(1)").mouseleave(function(){
-        $(".newswrap:eq(1)").css("opacity","0");
-    });    
-    $(".sec6div2>div:eq(2)").mouseenter(function(){
-        $(".newswrap:eq(2)").addClass("opacity");
-    });
-    $(".sec6div2>div:eq(2)").mouseleave(function(){
-        $(".newswrap:eq(2)").removeClass("opacity");
-    });
-    $(".sec6div2>div:last").mouseenter(function(){
-        $(".newswrap:last").addClass("opacity");
-    });
-    $(".sec6div2>div:last").mouseleave(function(){
-        $(".newswrap:last").removeClass("opacity");
+    $(".sec6div2>div",this).mouseleave(function(){
+        $(".newswrap",this).removeClass("flip-horizontal-top");
     });
 });
-

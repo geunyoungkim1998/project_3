@@ -183,7 +183,7 @@ header{
     height:60px;
     cursor: pointer;
     padding:10px;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 .big>ul{
     width:75%;
@@ -216,10 +216,9 @@ header{
 }
 #lan{
     background-color: rgba(255,255,255,0);
-    padding:5px;
     border:none;
     float: left;
-    padding: 30px;
+    margin:30px;
 }
 #lan>option{
     border:none;
@@ -262,4 +261,7 @@ footer>div:nth-last-of-type(1){
     text-align: center;
     margin-top:40px;
     line-height: 180%;
+}
+footer>div>ul>li>a:hover{
+    color:red;
 }
