@@ -172,19 +172,30 @@ header{
 .big{
     width:100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    float: left;
+}
+.big>div:first-child{
+    display: inline-block;
+    float: left;
 }
 .big img{
     width:60px;
     height:60px;
     cursor: pointer;
+    padding:10px;
+    margin-left: 40px;
+}
+.big>ul{
+    width:75%;
+    float: left;
+    padding: 20px;
+    margin-top:10px;
 }
 .big>ul>li{
     display: inline-block;
-    padding:30px 50px;
     cursor: pointer;
+    width:19%;
+    text-align: center;
 }
 .submenu{
     display: none;
@@ -195,6 +206,8 @@ header{
 .searchicon{
     width:25px;
     height:25px;
+    float: left;
+    padding: 25px;
 }
 .headerbtn{
     background-color: #444;
@@ -205,6 +218,8 @@ header{
     background-color: rgba(255,255,255,0);
     padding:5px;
     border:none;
+    float: left;
+    padding: 30px;
 }
 #lan>option{
     border:none;
