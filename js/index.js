@@ -38,7 +38,7 @@ $(function() {
     });
 });
 
-// 슬라이드 셋 인터벌
+// 슬라이드 셋인터벌
 $(function(){
     setInterval(time,7000);
     function time(){
