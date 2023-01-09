@@ -102,7 +102,7 @@ body{
     width:400px;
     height: auto;
     animation:motion 1s linear 0s infinite alternate;
-    rotate: 20deg;
+    transform:rotate(20deg);
     float: left;
     z-index: 2;
 }
@@ -120,7 +120,7 @@ body{
     width:150px;
     height: auto;
     animation:motion2 1s linear 0s infinite alternate;
-    rotate: -50deg;
+    transform:rotate(-50deg);
     float: left;
     top:-50px;
     z-index: 3;
@@ -139,7 +139,7 @@ body{
     width:400px;
     height: auto;
     animation:motion3 1s linear 0s infinite alternate;
-    rotate: -30deg;
+    transform:rotate(-30deg);
     float: left;
     top:-50px;
     z-index: 3;
@@ -158,7 +158,7 @@ body{
     width:300px;
     height: auto;
     animation:motion4 1.5s linear 0s infinite alternate;
-    rotate: 20deg;
+    transform:rotate(20deg);
     float: left;
     top:-50px;
     z-index: 3;
@@ -208,7 +208,7 @@ body{
     width:800px;
     height: auto;
     animation:rocket 1s linear 0s infinite alternate;
-    rotate: 60deg;
+    transform:rotate(60deg);
     float: left;
     z-index: 2;
 }
@@ -292,7 +292,7 @@ body{
 .sec1div3>div>img{
     position: relative;
 }
-img[name=wrench]{
+.wrench{
     width:20px;
     height:20px;
     display: block;
@@ -386,7 +386,7 @@ img[name=wrench]{
 .sec2div2>div>img{
     position: relative;
 }
-img[name=wrench1]{
+.wrench1{
     width:20px;
     height:20px;
     display: block;
@@ -530,7 +530,7 @@ img[name=wrench1]{
 .wrap5{
     background-color: rgb(199, 120, 223);
 }
-img[name="human"]{
+.human{
     width:400px;
     height: auto;
 }
@@ -546,7 +546,7 @@ img[name="human"]{
     top:400px;
     right:-90px;
 }
-img[name="human1"]{
+.human1{
     width:500px;
     height:auto;
     position: absolute;
@@ -804,7 +804,7 @@ img[name="human1"]{
     margin-top:-150px;
     margin-left: 1000px;
     width:400px;
-    rotate: -20deg;
+    transform: rotate(-20deg);
     animation: gift 1s linear 0s infinite alternate;
 }
 @keyframes gift{
