@@ -26,7 +26,7 @@ if(matchMedia("screen and (min-width:1100px)").matches){
     });
 }
 
-// 햄버거메뉴
+// 햄버거메뉴 
 $(function(){
     var burger = $('#smallham');
 
