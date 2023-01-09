@@ -1,12 +1,42 @@
-// 헤더 슬라이드 다운,업
+// 헤더 
 $(document).on('mouseenter','.big',function(){
     $(".submenu").stop().slideDown(200);
-    $(".big").css({"border-bottom":"1px solid grey"});
-    $("header").css({"background":"rgba(255,255,255,1)"});
+    $("header").stop().css({"background":"rgba(255,255,255,1)","width":"100%","height":"300px","border-bottom":"1px solid grey"});
 }).on('mouseleave','.big',function(){
     $('.submenu').stop().slideUp(200);
-    $(".big").css({"border-bottom":"none"});
-    $("header").css({"background":"rgba(255,255,255,0.9)"});
+    $("header").stop().css({"background":"rgba(255,255,255,0)","width":"100%","height":"80px","border-bottom":"none"});
+});
+
+$(document).ready(function(){
+    $(".smallmenu").css({"display":"none"});
+});
+$(document).on("click","#smallham",function(){
+    $(".smallmenu").stop().slideToggle(400);
+});
+
+if(matchMedia("screen and (min-width:1100px)").matches){
+    $(document).on('mouseenter','.big',function(){
+        $("header").stop().css({"height":"300px"});
+    }).on('mouseleave','.big',function(){
+        $("header").stop().css({"height":"80px"});
+    });
+}else{
+    $(document).on("click","#smallham",function(){
+        $(".smallmenu, header").toggleClass("opacitybackground");
+    });
+}
+
+// 햄버거메뉴
+$(function(){
+    var burger = $('#smallham');
+
+    burger.each(function(index){
+        var $this = $(this);
+        $this.on('click', function(e){
+            e.preventDefault();
+            $(this).toggleClass('active');
+            })
+    });
 });
 
 // 메뉴호버
@@ -25,6 +55,23 @@ $(function(){
     });
     $(".submenu:eq(4) li").mouseenter(function(){
         $(this).addClass("hoverP");
+    });
+});
+$(function(){
+    $(".smallmenu>ul>li:first>ul>li").mouseenter(function(){
+        $(this).addClass('hoverR')
+    });
+    $(".smallmenu>ul>li:eq(1)>ul>li").mouseenter(function(){
+        $(this).addClass('hoverY')
+    });
+    $(".smallmenu>ul>li:eq(2)>ul>li").mouseenter(function(){
+        $(this).addClass('hoverG')
+    });
+    $(".smallmenu>ul>li:eq(3)>ul>li").mouseenter(function(){
+        $(this).addClass('hoverB')
+    });
+    $(".smallmenu>ul>li:last>ul>li").mouseenter(function(){
+        $(this).addClass('hoverP')
     });
 });
 
@@ -51,7 +98,6 @@ $(function(){
 $(function(){
     $(window).scroll(function(){
         var ws=$(this).scrollTop();
-
         if(ws>500){
             $(".sec1div3:first").css("transform","translateX(0px)").css("opacity","1");
         }

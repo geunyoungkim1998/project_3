@@ -12,7 +12,6 @@ ul, li, ol{
 a{
     text-decoration: none;
 }
-
 body{
     display: flex;
     justify-content: center;
@@ -292,7 +291,7 @@ body{
 .sec1div3>div>img{
     position: relative;
 }
-.wrench{
+img[alt="wr"]{
     width:20px;
     height:20px;
     display: block;
@@ -386,7 +385,7 @@ body{
 .sec2div2>div>img{
     position: relative;
 }
-.wrench1{
+img[alt="wr1"]{
     width:20px;
     height:20px;
     display: block;
@@ -546,7 +545,7 @@ body{
     top:400px;
     right:-90px;
 }
-.human1{
+img[alt="human1"]{
     width:500px;
     height:auto;
     position: absolute;
