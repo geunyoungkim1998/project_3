@@ -1,45 +1,93 @@
-/* @charset "utf-8";
+@charset "utf-8";
 
 @media screen and (max-width:599px) {
-    #slider,.slider1,.slider1>div:nth-child(1){
+    #sec3{
         width:100%;
-        height:300px;
+        height: 1500px;
     }
-    #humans{
+    .sec3div1{
+        width:90%;
+    }
+    .sec3div2{
+        width:90%;
+    }
+    .sec3div2>div{
         width:100%;
+        height: 250px;
+    }
+    .wrap3, .wrap4, .wrap5{
+        margin-top: -710px;
+        margin-left: -870px;
+    }
+    .wrap1,.wrap2{
+        margin-top:-175%;
+        margin-left:-200%;
     }
 }
 
 @media screen and (min-width:600px) {
-    #slider,.slider1,.slider1>div:nth-child(1){
+    #sec3{
         width:100%;
-        height:450px;
+        height: 1150px;
     }
-    #humans{
-        width:100%;
+    .sec3div1{
+        width:90%;
+    }
+    .sec3div2{
+        width:90%;
+    }
+    .sec3div2>div{
+        width:50%;
+        height: 300px;
+    }
+    .wrap3, .wrap4, .wrap5{
+        margin-top: -710px;
+        margin-left: -870px;
+    }
+    .wrap1, .wrap2{
+        margin-top: -750px;
+        margin-left: -870px;
     }
 }
 
 @media screen and (min-width:1100px) {
-    #slider,.slider1,.slider1>div:nth-child(1){
+    #sec3{
         width:100%;
-        height:600px;
+        height: 900px;
     }
-    #humans{
-        width:100%;
+    .sec3div1{
+        width:80%;
+    }
+    .sec3div2{
+        width:80%;
+    }
+    .sec3div2>div{
+        width:20%;
+        height: auto;
+    }
+    .wrap1, .wrap2, .wrap3, .wrap4, .wrap5{
+        margin-top: -600px;
+        margin-left: -440px;
     }
 }
 
 @media screen and (min-width:1560px) {
-    #slider{
+    #sec3{
         width:100%;
-        height:940px;
+        height: 900px;
     }
-    .slider1,.slider1>div:nth-child(1){
-        width:1100px;
-        height:940px;
-    }
-    #humans{
+    .sec3div1{
         width:1100px;
     }
-} */
+    .sec3div2{
+        width:1100px;
+    }
+    .sec3div2>div{
+        width:20%;
+        height: auto;
+    }
+    .wrap1, .wrap2, .wrap3, .wrap4, .wrap5{
+        margin-top: -600px;
+        margin-left: -440px;
+    }
+}

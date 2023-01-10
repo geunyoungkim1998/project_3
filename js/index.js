@@ -1,10 +1,10 @@
 // 헤더 
 $(document).on('mouseenter','.big',function(){
     $(".submenu").stop().slideDown(200);
-    $("header").stop().css({"background":"rgba(255,255,255,1)","width":"100%","height":"300px","border-bottom":"1px solid grey"});
+    $("header").stop().css({"height":"300px","background":"rgba(255,255,255,1)","width":"100%","height":"300px","border-bottom":"1px solid grey"});
 }).on('mouseleave','.big',function(){
     $('.submenu').stop().slideUp(200);
-    $("header").stop().css({"background":"rgba(255,255,255,0)","width":"100%","height":"80px","border-bottom":"none"});
+    $("header").stop().css({"height":"80px","background":"rgba(255,255,255,0)","width":"100%","height":"80px","border-bottom":"none"});
 });
 
 $(document).ready(function(){
@@ -12,19 +12,8 @@ $(document).ready(function(){
 });
 $(document).on("click","#smallham",function(){
     $(".smallmenu").stop().slideToggle(400);
+    $(".smallmenu, header").toggleClass("opacitybackground").toggleClass("opacity1");
 });
-
-if(matchMedia("screen and (min-width:1100px)").matches){
-    $(document).on('mouseenter','.big',function(){
-        $("header").stop().css({"height":"300px"});
-    }).on('mouseleave','.big',function(){
-        $("header").stop().css({"height":"80px"});
-    });
-}else{
-    $(document).on("click","#smallham",function(){
-        $(".smallmenu, header").toggleClass("opacitybackground");
-    });
-}
 
 // 햄버거메뉴 
 $(function(){
