@@ -421,17 +421,13 @@ img[alt="wr1"]{
 }
 
 #sec3{
-    /* width:100%;
-    height:900px; */
     background-color: #444;
     overflow: hidden;
 }
 #sec3>div{
-    background-image: url(../img/bg4.png);
     background-repeat: no-repeat;
 }
 .sec3div1{
-    /* width:1100px; */
     height:200px;
     display: flex;
     align-items: center;
@@ -440,7 +436,6 @@ img[alt="wr1"]{
     color:white;
 }
 .sec3div2{
-    /* width:1100px; */
     height:700px;
     display: flex;
     flex-wrap: wrap;
@@ -449,7 +444,6 @@ img[alt="wr1"]{
     opacity: 0;
 }
 .sec3div2>div{
-    /* width:20%; */
     height:auto;
     background-color: white;
     display: flex;
@@ -471,8 +465,6 @@ img[alt="wr1"]{
     text-align: center;
     align-items: center;
     border-radius: 50%;
-    /* margin-top: -600px;
-    margin-left: -440px; */
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
@@ -544,26 +536,19 @@ img[alt="wr1"]{
 }
 .sec3title>img{
     position:absolute;
-    top:400px;
-    right:-90px;
 }
 img[alt="human1"]{
     width:500px;
-    height:auto;
     position: absolute;
-    right: -160px;
 }
 
 #sec4{
-    width:100%;
-    height:720px;
     background-color: rgb(236, 89, 89);
     overflow: hidden;
     position: relative;
 }
 .area{
     width:100%;
-    height: 720px;
     position: absolute;
 }
 .circle{
@@ -665,14 +650,12 @@ img[alt="human1"]{
     }
 }
 .sec4div1{
-    width:1100px;
     height:200px;
     display: flex;
     align-items: center;
     z-index: 20;
 }
 .sec4div2{
-    width:1100px;
     height:500px;
     display: flex;
     flex-wrap: wrap;
@@ -693,14 +676,13 @@ img[alt="human1"]{
 }
 .sec4div2>div{
     position: relative;
+    overflow: hidden;
 }
 .sec4text{
     opacity: 0;
     position: absolute;
     padding:20px;
     background-color: black;
-    width:235px;
-    height:291px;
     transition: all 0.3s ease;
 }
 .sec4text>p{
@@ -712,10 +694,6 @@ img[alt="human1"]{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.sec4img>p{
-    padding-top:50px;
-    padding-bottom: 225px;
 }
 .sec4img>img{
     width:300px;
