@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border:1px solid #ccc;
+            margin:30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>box 색 바꾸기</h1>
+    <button onclick="chc()">click</button>
+    <div id="box"></div>
+
+    <script>
+        
+        function chc(){
+            var arrcolor=["blue","pink","aqua","violet","gold","lightgrey","tomato"];
+            var c=Math.round(Math.random()*arrcolor.length);
+            box.style.backgroundColor=arrcolor[c];
+        }
+    </script>
+</body>
+</html>

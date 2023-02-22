@@ -18,7 +18,6 @@ $(document).on("click","#smallham",function(){
 // 햄버거메뉴 
 $(function(){
     var burger = $('#smallham');
-
     burger.each(function(index){
         var $this = $(this);
         $this.on('click', function(e){

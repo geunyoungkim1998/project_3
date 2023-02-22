@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>좋아하는 과일은?</h1>
+    <button onclick="ich()">click</button>
+    <img src="img/watermelon.jpg" alt="a" id="a">
+
+    <script>
+        function ich(){
+            var arr=["img/apple.jpg","img/banana.jpg","img/tomato.jpg","img/orange.jpg","img/watermelon.jpg"];
+            var ch=Math.floor(Math.random()*arr.length);
+            a.src=arr[ch];
+        }
+    </script>
+</body>
+</html>

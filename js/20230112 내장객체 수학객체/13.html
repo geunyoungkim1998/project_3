@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+    </style>
+</head>
+<body>
+    <script>
+        var score=[];
+        var nummbering=parseInt(prompt('입력할 학생 수를 적으시오','0'));
+
+        var input=function(){
+            var name=prompt("이름을 입력하시오","홍길동");
+            var korean=Number(prompt("국어 점수를 입력하시오","100"));
+            var english=Number(prompt("영어 점수를 입력하시오","100"));
+            var math=Number(prompt("수학 점수를 입력하시오","100"));
+            score.push(name);
+            score.push(korean);
+            score.push(english);
+            score.push(math);
+        }
+
+        var i=0;
+        while(i<nummbering){
+            input();
+            i++
+        }
+
+        var a=(score.length)/4;
+        var t=(score.length)/a;
+
+        var j=0;
+        while (j<nummbering){
+            document.write('이름 :'+score[j*t]+'<br><br>');
+            document.write('국어점수: '+score[j*t+1]+'점<br>');
+            document.write('영어점수: '+score[j*t+2]+'점<br>');
+            document.write('수학점수: '+score[j*t+3]+'점<br>');
+            document.write('합계점수: '+(score[j*t+1]+score[j*t+2]+score[j*t+3])+'점<br>');
+            document.write('평균점수: '+Math.round((score[j*t+1]+score[j*t+2]+score[j*t+3])/3)+'점<br>');
+            document.write('<br><br><br><br><br>')
+            j++;
+        }
+    </script>
+</body>
+</html>

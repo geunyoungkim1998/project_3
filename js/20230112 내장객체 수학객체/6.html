@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>점심 메뉴 고르기</h1>
+    <button id="a">click</button>
+    <div id="box">오늘의 메뉴는?</div>
+
+    <script>
+        a.onclick=function(){
+            var menu=["img/apple.jpg","img/banana.jpg","img/tomato.jpg","img/orange.jpg","img/watermelon.jpg"];
+            var menuNum=Math.floor(Math.random()*menu.length);
+            var result=menu[menuNum];
+            box.innerHTML=result;
+        }
+    </script>
+</body>
+</html>
